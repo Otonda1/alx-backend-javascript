@@ -1,4 +1,3 @@
-#!/usr/bin/node
 export default async function divideFunction(numerator, denominator) {
     try {
         if (denominator === 0) {

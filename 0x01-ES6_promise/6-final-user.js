@@ -1,6 +1,6 @@
 #!/usr/bin/node
-import uploadPhoto from './5-photo-reject';
 import signUpUser from './4-user-promise';
+import uploadPhoto from './5-photo-reject';
 
 export default async function handleProfileSignup(firstName, lastName, filename) {
   return Promise.allSettled([signUpUser(firstName, lastName),
@@ -10,4 +10,4 @@ export default async function handleProfileSignup(firstName, lastName, filename)
       else console.log(`${value.value.firstName} ${value.value.lastName}`);
     });
   });
-
+}
